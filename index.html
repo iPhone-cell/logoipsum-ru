@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Logoipsum</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header" class="header">
+		<div class="container">
+			<div class="header__main">
+				<img src="img/header/logo.svg" alt="Logoipsum">
+				<nav class="header__nav" id="nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item header__nav-item_active">
+							<a href="#">
+								Главная
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">
+								Наши предложения
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">
+								Цены
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">
+								Блог
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="btn btn_orange" data-scroll="#plans">Начать</a>
+				<button type="button" class="burger" id="navToggle">
+					<span class="burger__item">Меню</span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Intro -->
+	<section class="intro" id="intro">
+		<div class="container">
+			<div class="intro__main">
+				<div class="intro__left">
+					<h2 class="intro__title">
+						Развивайте свой
+						бизнес по подписке
+					</h2>
+					<p class="intro__decription">
+						Продукты, ориентированные на конечный результат, которые снижают отток, оптимизируют
+						ценообразование и увеличивают вашу подписку
+						бизнес от начала до конца.
+					</p>
+					<div class="intro__left-buttons">
+						<a href="#" class="btn btn_blue" data-scroll="#plans">Начать</a>
+						<a href="#" class="arrow-down" data-scroll="#brands">
+							<img src="img/intro/arrow-down.svg" alt="Спуститься вниз">
+						</a>
+					</div>
+				</div>
+				<img src="img/intro/Hero 3D.png" alt="" class="intro__right"></img>
+			</div>
+		</div>
+	</section>
+
+	<!-- Brands -->
+	<section class="brands" id="brands">
+		<div class="container">
+			<div class="brands__main">
+				<img class="brands__item" src="img/brands/1.svg" alt="Logoipsum">
+				<img class="brands__item" src="img/brands/2.svg" alt="Logoipsum">
+				<img class="brands__item" src="img/brands/3.svg" alt="Logoipsum">
+				<img class="brands__item" src="img/brands/4.svg" alt="Logoipsum">
+				<img class="brands__item" src="img/brands/5.svg" alt="Logoipsum">
+			</div>
+		</div>
+	</section>
+
+	<!-- Index -->
+	<section class="index">
+		<div class="container">
+			<div class="index__main">
+				<div class="index__left">
+					<img src="img/index/index.png" alt="">
+				</div>
+				<div class="index__right">
+					<h2 class="index__title">
+						Индекс подписки
+					</h2>
+					<p class="index__description">
+						Ежедневный набор данных, позволяющий вам быть в курсе тенденций рынка подписки и того, что
+						происходит в вашей вертикали.
+					</p>
+					<a href="#" class="index__link link_more">
+						Узнать подробнее
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Metrics -->
+	<section class="metrics">
+		<div class="container">
+			<div class="metrics__main">
+				<div class="metrics__left">
+					<img src="img/metrics/metrics.png" alt="">
+				</div>
+				<div class="metrics__right">
+					<h2 class="index__title">
+						Углубленные показатели
+					</h2>
+					<p class="metrics__description">
+						Точная отчетность в режиме реального времени у вас под рукой. Получение данных еще никогда не
+						было таким простым.
+					</p>
+					<a href="#" class="metrics__link link_more">
+						Узнать подробнее
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Offers -->
+	<section class="offers">
+		<div class="container">
+			<div class="offers__main">
+				<div class="offers__item">
+					<img src="img/offers/1.svg" alt="">
+					<h3 class="offers__title">
+						Контрольные показатели
+					</h3>
+					<p class="offers__subtitle">
+						Посмотрите, как вы конкурируете с сопоставимыми компаниями на аналогичных этапах.
+					</p>
+				</div>
+				<div class="offers__item">
+					<img src="img/offers/2.svg" alt="">
+					<h3 class="offers__title">
+						Аудит ценообразования
+					</h3>
+					<p class="offers__subtitle">
+						Оцените эффективность вашей стратегии монетизации и ценообразования.
+					</p>
+				</div>
+				<div class="offers__item">
+					<img src="img/offers/3.svg" alt="">
+					<h3 class="offers__title">
+						Аудит удержания персонала
+					</h3>
+					<p class="offers__subtitle">
+						Проведите аудит того, где существует утечка доходов и где вы можете увеличить удержание.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Plans -->
+	<section class="plans" id="plans">
+		<div class="container">
+			<div class="plans__top">
+				<h2 class="plans__title">
+					Получите правильный план для будущего продукта.
+				</h2>
+				<div class="plans__tabs">
+					<button type="button" class="plans__tabs-item plans__tabs-item_active">
+						Годовой
+					</button>
+					<button type="button" class="plans__tabs-item">
+						Ежемесячно
+					</button>
+				</div>
+			</div>
+			<div class="plans__main">
+				<div class="plans__main-item">
+					<div class="plans__main-item-top">
+						Начинающий
+					</div>
+					<div class="plans__main-item-title">
+						Бесплатно
+					</div>
+					<ul class="plans__main-item-description">
+						<li>
+							1 Веб-сайт
+						</li>
+						<li>
+							Хостинг на 5 ГБ
+						</li>
+						<li>
+							Ограниченная поддержка
+						</li>
+					</ul>
+					<a href="#" class="btn btn_opacity plans__main-item-btn">
+						Приобрести
+					</a>
+				</div>
+				<div class="plans__main-item plans__main-item_red">
+					<div class="plans__main-item-top">
+						Премиум
+					</div>
+					<div class="plans__main-item-title">
+						1 699р<span>/месяц</span>
+					</div>
+					<ul class="plans__main-item-description">
+						<li>
+							10 Веб-сайтов
+						</li>
+						<li>
+							Хостинг на 15 ГБ
+						</li>
+						<li>
+							Премиум-поддержка
+						</li>
+					</ul>
+					<a href="#" class="btn btn_red plans__main-item-btn">
+						Приобрести
+					</a>
+				</div>
+				<div class="plans__main-item">
+					<div class="plans__main-item-top">
+						Корпоративный
+					</div>
+					<div class="plans__main-item-title">
+						2 990р<span>/месяц</span>
+					</div>
+					<ul class="plans__main-item-description">
+						<li>
+							Неограниченное число веб-сайтов
+						</li>
+						<li>
+							Хостинг на 50 ГБ
+						</li>
+						<li>
+							Премиум-поддержка
+						</li>
+					</ul>
+					<a href="#" class="btn btn_opacity plans__main-item-btn">
+						Приобрести
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- JavaScript -->
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>
