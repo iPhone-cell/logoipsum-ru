@@ -47,7 +47,7 @@
 				</nav>
 				<a href="#" class="btn btn_orange" data-scroll="#plans">Начать</a>
 				<button type="button" class="burger" id="navToggle">
-					<span class="burger__item">Меню</span>
+					<span class="burger__item" id="burgerItem">Меню</span>
 				</button>
 			</div>
 		</div>
@@ -74,13 +74,13 @@
 						</a>
 					</div>
 				</div>
-				<img src="img/intro/Hero 3D.png" alt="" class="intro__right"></img>
+				<img src="img/intro/hero.png" alt="" class="intro__right">
 			</div>
 		</div>
 	</section>
 
 	<!-- Brands -->
-	<section class="brands" id="brands">
+	<div class="brands" id="brands">
 		<div class="container">
 			<div class="brands__main">
 				<img class="brands__item" src="img/brands/1.svg" alt="Logoipsum">
@@ -90,7 +90,7 @@
 				<img class="brands__item" src="img/brands/5.svg" alt="Logoipsum">
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!-- Index -->
 	<section class="index">
@@ -176,85 +176,157 @@
 	<!-- Plans -->
 	<section class="plans" id="plans">
 		<div class="container">
-			<div class="plans__top">
-				<h2 class="plans__title">
-					Получите правильный план для будущего продукта.
-				</h2>
-				<div class="plans__tabs">
-					<button type="button" class="plans__tabs-item plans__tabs-item_active">
-						Годовой
-					</button>
-					<button type="button" class="plans__tabs-item">
-						Ежемесячно
-					</button>
+			<div class="plans__wrapper tabs-wrapper">
+				<div class="plans__top">
+					<h2 class="plans__title">
+						Получите правильный план для будущего продукта.
+					</h2>
+					<div class="plans__tabs tabs">
+						<button type="button" class="plans__tabs-item plans__tabs-item_active tab">
+							Годовой
+						</button>
+						<button type="button" class="plans__tabs-item tab">
+							Ежемесячно
+						</button>
+					</div>
 				</div>
-			</div>
-			<div class="plans__main">
-				<div class="plans__main-item">
-					<div class="plans__main-item-top">
-						Начинающий
+				<div class="tab-content">
+					<div class="plans__main tab-item">
+						<div class="plans__main-item">
+							<div class="plans__main-item-top">
+								Начинающий
+							</div>
+							<div class="plans__main-item-title">
+								Бесплатно
+							</div>
+							<ul class="plans__main-item-description">
+								<li>
+									1 Веб-сайт
+								</li>
+								<li>
+									Хостинг на 5 ГБ
+								</li>
+								<li>
+									Ограниченная поддержка
+								</li>
+							</ul>
+							<a href="#" class="btn btn_opacity plans__main-item-btn">
+								Приобрести
+							</a>
+						</div>
+						<div class="plans__main-item plans__main-item_red">
+							<div class="plans__main-item-top">
+								Премиум
+							</div>
+							<div class="plans__main-item-title">
+								1 699р<span>/месяц</span>
+							</div>
+							<ul class="plans__main-item-description">
+								<li>
+									10 Веб-сайтов
+								</li>
+								<li>
+									Хостинг на 15 ГБ
+								</li>
+								<li>
+									Премиум-поддержка
+								</li>
+							</ul>
+							<a href="#" class="btn btn_red plans__main-item-btn">
+								Приобрести
+							</a>
+						</div>
+						<div class="plans__main-item">
+							<div class="plans__main-item-top">
+								Корпоративный
+							</div>
+							<div class="plans__main-item-title">
+								2 990р<span>/месяц</span>
+							</div>
+							<ul class="plans__main-item-description">
+								<li>
+									Неограниченное число веб-сайтов
+								</li>
+								<li>
+									Хостинг на 50 ГБ
+								</li>
+								<li>
+									Премиум-поддержка
+								</li>
+							</ul>
+							<a href="#" class="btn btn_opacity plans__main-item-btn">
+								Приобрести
+							</a>
+						</div>
 					</div>
-					<div class="plans__main-item-title">
-						Бесплатно
+					<div class="plans__main tab-item">
+						<div class="plans__main-item">
+							<div class="plans__main-item-top">
+								Начинающий
+							</div>
+							<div class="plans__main-item-title">
+								Бесплатно
+							</div>
+							<ul class="plans__main-item-description">
+								<li>
+									1 Веб-сайт
+								</li>
+								<li>
+									Хостинг на 5 ГБ
+								</li>
+								<li>
+									Ограниченная поддержка
+								</li>
+							</ul>
+							<a href="#" class="btn btn_opacity plans__main-item-btn">
+								Приобрести
+							</a>
+						</div>
+						<div class="plans__main-item plans__main-item_red">
+							<div class="plans__main-item-top">
+								Премиум
+							</div>
+							<div class="plans__main-item-title">
+								1 990р<span>/месяц</span>
+							</div>
+							<ul class="plans__main-item-description">
+								<li>
+									10 Веб-сайтов
+								</li>
+								<li>
+									Хостинг на 15 ГБ
+								</li>
+								<li>
+									Премиум-поддержка
+								</li>
+							</ul>
+							<a href="#" class="btn btn_red plans__main-item-btn">
+								Приобрести
+							</a>
+						</div>
+						<div class="plans__main-item">
+							<div class="plans__main-item-top">
+								Корпоративный
+							</div>
+							<div class="plans__main-item-title">
+								3 490р<span>/месяц</span>
+							</div>
+							<ul class="plans__main-item-description">
+								<li>
+									Неограниченное число веб-сайтов
+								</li>
+								<li>
+									Хостинг на 50 ГБ
+								</li>
+								<li>
+									Премиум-поддержка
+								</li>
+							</ul>
+							<a href="#" class="btn btn_opacity plans__main-item-btn">
+								Приобрести
+							</a>
+						</div>
 					</div>
-					<ul class="plans__main-item-description">
-						<li>
-							1 Веб-сайт
-						</li>
-						<li>
-							Хостинг на 5 ГБ
-						</li>
-						<li>
-							Ограниченная поддержка
-						</li>
-					</ul>
-					<a href="#" class="btn btn_opacity plans__main-item-btn">
-						Приобрести
-					</a>
-				</div>
-				<div class="plans__main-item plans__main-item_red">
-					<div class="plans__main-item-top">
-						Премиум
-					</div>
-					<div class="plans__main-item-title">
-						1 699р<span>/месяц</span>
-					</div>
-					<ul class="plans__main-item-description">
-						<li>
-							10 Веб-сайтов
-						</li>
-						<li>
-							Хостинг на 15 ГБ
-						</li>
-						<li>
-							Премиум-поддержка
-						</li>
-					</ul>
-					<a href="#" class="btn btn_red plans__main-item-btn">
-						Приобрести
-					</a>
-				</div>
-				<div class="plans__main-item">
-					<div class="plans__main-item-top">
-						Корпоративный
-					</div>
-					<div class="plans__main-item-title">
-						2 990р<span>/месяц</span>
-					</div>
-					<ul class="plans__main-item-description">
-						<li>
-							Неограниченное число веб-сайтов
-						</li>
-						<li>
-							Хостинг на 50 ГБ
-						</li>
-						<li>
-							Премиум-поддержка
-						</li>
-					</ul>
-					<a href="#" class="btn btn_opacity plans__main-item-btn">
-						Приобрести
-					</a>
 				</div>
 			</div>
 		</div>

@@ -304,12 +304,15 @@ button {
 .plans__tabs-item:hover {
 	color: #5454D4;
 }
-.plans__tabs-item_active {
+.tabs-wrapper .active {
 	color: #FFFFFF;
 	background: #5454D4;
 	border-radius: 10px 0px 0px 10px;
 }
-.plans__tabs-item_active:hover {
+.tabs-wrapper .active:last-child {
+	border-radius: 0px 10px 10px 0px;
+}
+.tabs-wrapper .active:hover {
 	color: #fff;
 }
 .plans__main {
@@ -394,7 +397,6 @@ button {
 	opacity: 0.9;
 }
 
-
 /* Media */
 @media (max-width: 1440px) {
 	.intro__right {
@@ -436,7 +438,23 @@ button {
 		padding-top: 330px;
 	}
 	.header__nav.show {
+		transition: all 0.3s ease;
 		display: block;
+	}
+	.burger__item.active {
+		width: 0;	
+	}
+	.burger__item.active::before {
+		transform: rotate(45deg);
+		top: 0;
+	}
+	.burger__item.active::after {
+		transform: rotate(-45deg);
+		top: 0;
+	}
+	.burger__item.active::before,
+	.burger__item.active::after {
+		width: 28px;
 	}
 	.header__nav-list {
 		flex-direction: column;
